@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-z5cc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/mbasti-test-org/happy-path-xygk-tenant/appstudio/dc-metro-map-z5cc@sha256:977dbb670b9ec3c77ca9cd337b02cf6fe847be6016d515803ca3eb4cc80d7b9a
+        name: my-nodejs
+        resources: {}
+status: {}
